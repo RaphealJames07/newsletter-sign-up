@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsLetter</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mobile.css">
+</head>
+<body>
+  <div class="MainBody ">
+    <div class="MainBodyWrapper">
+      <div class="MainLeft">
+        <h1>Stay Updated!</h1>
+        <p class="PromptText">Join 60,000+, product managers recieving monthly updates on:</p>
+        <div class="MainLeftList">
+          <span>
+            <img src="./assets//images/icon-list.svg" alt=""> <p>Product discovery and building what matters</p>
+          </span>
+          <span>
+            <img src="./assets//images/icon-list.svg" alt=""> <p>Measuring to ensure update are a success</p>
+          </span>
+          <span>
+            <img src="./assets//images/icon-list.svg" alt=""> <p>And much more!</p>
+          </span>
+        </div>
+        <div class="MainLeftInputsLabel">
+          <p>Email address <span class="invalidoutput"></span></p>
+          <input type="text" class="input " value="" onchange="">
+        </div>
+        <button class="submitbtn" onclick="handleSubmit()">
+          <p class="submitText ">Subscribe to monthly newsletter</p>
+          <div class="threebody ">
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+            </div>
+        </button>
+      </div>
+      <div class="MainRight">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="Success ">
+    <div class="SuccessTextBothDiv">
+    <img src="./assets//images/icon-success.svg" alt="">
+    <div class="SuccessTextBoth">
+      <h1>Thanks for subscribing!</h1>
+    <p class="emailConfirm"></p>
+    </div>
+   </div>
+    <button class="dismissBtn" onclick="handleRemoveSuccess()">Dismiss message</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
